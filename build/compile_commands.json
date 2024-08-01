@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/admin/文档/OpenGL/RayTracing/build",
+  "command": "/usr/bin/g++  -I/home/admin/文档/OpenGL/RayTracing/include -I/home/admin/文档/OpenGL/RayTracing -I/home/admin/文档/OpenGL/RayTracing/3rdpart/glm -g -std=c++23 -o CMakeFiles/main.dir/src/Model.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/Model.cpp",
+  "file": "/home/admin/文档/OpenGL/RayTracing/src/Model.cpp",
+  "output": "CMakeFiles/main.dir/src/Model.cpp.o"
+},
+{
+  "directory": "/home/admin/文档/OpenGL/RayTracing/build",
+  "command": "/usr/bin/g++  -I/home/admin/文档/OpenGL/RayTracing/include -I/home/admin/文档/OpenGL/RayTracing -I/home/admin/文档/OpenGL/RayTracing/3rdpart/glm -g -std=c++23 -o CMakeFiles/main.dir/src/Scenes.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/Scenes.cpp",
+  "file": "/home/admin/文档/OpenGL/RayTracing/src/Scenes.cpp",
+  "output": "CMakeFiles/main.dir/src/Scenes.cpp.o"
+},
+{
+  "directory": "/home/admin/文档/OpenGL/RayTracing/build",
+  "command": "/usr/bin/g++  -I/home/admin/文档/OpenGL/RayTracing/include -I/home/admin/文档/OpenGL/RayTracing -I/home/admin/文档/OpenGL/RayTracing/3rdpart/glm -g -std=c++23 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/main.cpp",
+  "file": "/home/admin/文档/OpenGL/RayTracing/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+}
+]

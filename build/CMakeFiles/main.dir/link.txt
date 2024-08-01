@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/main.dir/src/Model.cpp.o CMakeFiles/main.dir/src/Scenes.cpp.o CMakeFiles/main.dir/src/main.cpp.o -o /home/admin/文档/OpenGL/RayTracing/bin/main
