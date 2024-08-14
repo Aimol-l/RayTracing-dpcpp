@@ -98,6 +98,8 @@
         "__tree": "cpp",
         "print": "cpp",
         "*.ipp": "cpp",
-        "text_encoding": "cpp"
+        "text_encoding": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }

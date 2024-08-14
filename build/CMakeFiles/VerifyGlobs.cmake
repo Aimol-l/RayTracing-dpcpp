@@ -3,30 +3,30 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SRC_FILES at CMakeLists.txt:21 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/aimol/Documents/C++/OpenGL/RayTracing/include/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/*.h")
 set(OLD_GLOB
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/BVH.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/Material.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/Model.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/Render.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/Scenes.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/Triangle.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/strtool.h"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/include/utils_.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/BVH.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/Material.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/Model.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/Render.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/Scenes.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/Triangle.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/strtool.h"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include/utils_.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/aimol/Documents/C++/OpenGL/RayTracing/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # SRC_FILES at CMakeLists.txt:21 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/aimol/Documents/C++/OpenGL/RayTracing/src/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/src/*.cpp")
 set(OLD_GLOB
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/src/BVH.cpp"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/src/Model.cpp"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing/src/main.cpp"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/src/BVH.cpp"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/src/Model.cpp"
+  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/aimol/Documents/C++/OpenGL/RayTracing/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/cmake.verify_globs")
 endif()

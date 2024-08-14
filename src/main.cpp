@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]){
     Model cube("../assets/123456.obj",MATE);
     Model moon("../assets/moon.obj",MATE);
     Scenes scenes;
-    scenes.add_model(cube,moon);
+    scenes.add_model(cube);
     auto triangles = scenes.get_triangles();
     ut::println("三角形数量",triangles.size());
     //创建线性bvh树

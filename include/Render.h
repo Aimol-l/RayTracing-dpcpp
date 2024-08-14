@@ -4,6 +4,7 @@
 
 sycl::queue init_queue(){
     sycl::queue queue(sycl::default_selector_v); //手动指定GPU设备
+    // sycl::queue queue(sycl::cpu_selector_v); //手动指定GPU设备
     auto sycl_device = queue.get_device();
     auto sycl_context = queue.get_context();
     std::cout<<"*************************device info************************"<<std::endl;
@@ -25,13 +26,13 @@ struct Ray{
 };
 struct HitResult{
     bool is_hit = false; // 是否击中
-    float distance;     //起点和击中点之间的距离
+    float distance = -1;     //起点和击中点之间的距离
     sycl::float3 emit;  // 是否为发光
     sycl::float3 hitpoint; //击中点
     sycl::float3 normal;    //击中点所在三角面的法线
 };
-const static int W = 500; // 图像宽度
-const static int H = 500;  // 图像高度
+const static int W = 250; // 图像宽度
+const static int H = 250;  // 图像高度
 inline float randf(int seed) {
     float r = float((1664525 * seed + 1013904223) % 4294967296)/4294967296;
     return r;
@@ -59,19 +60,17 @@ HitResult hitBVH(Ray &ray,BVHNode* bvh_data){
     int stack[256];
     int top = 0;
     stack[0] = 1;
-    while (true){
+
+    int count = 0;
+    while (top >= 0 || count <10){
         // stack顶端是叶子节点，就继续内部的三角形是否与射线相交(大概率会)
         if(bvh_data[top].is_leaf){
             // 判断相交，保存交点，距离，面法线，发光情况
-
+            res.is_hit = true;
+            res.distance = 1.0f;
             break;
         }
-        // 不是叶子节点
-        // 判断bvh_data[top]的bbox是否与ray相交，如果不相交就说明该节点不用遍历
-        // 如果相交，就把两个孩子节点添加到stack上，原先的节点pop掉
-        if(hitAABB(ray,bvh_data[top].min_xyz,bvh_data[top].max_xyz) == -1){
-            break;
-        }
+        // 计算左右节点与ray的交，交点距离远的先push到stack内
         auto left = bvh_data[top].left_index;
         auto right = bvh_data[top].right_index;
         float d1 = -FLT_MAX; // 左盒子交点距离
@@ -92,14 +91,18 @@ HitResult hitBVH(Ray &ray,BVHNode* bvh_data){
         }else if(d2>0){
             stack[top++] = right;
         }
+        count++;
     }
     return res;
 }
 sycl::float3 trace_ray(Ray ray,BVHNode* bvh_data){
     // 需要利用bvh树判断ray是否和bbox相交
     HitResult hitresult = hitBVH(ray,bvh_data);
-    // 如果相交那么就要进行反射，如果没有返回黑色
-    return sycl::float3{1,1,1};
+    if(hitresult.is_hit){
+        return sycl::float3{hitresult.distance,hitresult.distance,hitresult.distance};
+    }else{
+        return sycl::float3{0.1,0.1,0.1};
+    }
 }
 void render(std::vector<BVHNode> &bvhtree, int spp=1){
     sycl::queue queue = init_queue();
@@ -117,17 +120,17 @@ void render(std::vector<BVHNode> &bvhtree, int spp=1){
             float y = 2.0 * float(H - idx[0]) / float(H) - 1.0;
             sycl::float3 color = {0,0,0};
             sycl::float3 eye_pos = {0,0,4}; //眼睛的位置
-            for(int i=0;i<spp;i++){
+            // for(int i=0;i<spp;i++){
                 // MSAA，在像素点范围内再次随机取样
-                x += (randf(i*idx[1]-idx[0]) - 0.5f) / float(W);
-                y += (randf(i*idx[1]+idx[0]) - 0.5f) / float(H);
+                // x += (randf(i*idx[1]-idx[0]) - 0.5f) / float(W);
+                // y += (randf(i*idx[1]+idx[0]) - 0.5f) / float(H);
                 sycl::float3 coord = normalize(x,y,1.0f); //视平面上采样点位置
-                sycl::float3 ray_dir = normalize(coord - eye_pos); //光线的方向，实际反射的时候是用逆方向
-                Ray ray{eye_pos,ray_dir};
-                // 路径追踪
-                color += trace_ray(ray,bvh_data)/spp;
-            }
-            image_data[idx[1] * W + idx[0]] += color;
+                // sycl::float3 ray_dir = normalize(coord - eye_pos); //光线的方向，实际反射的时候是用逆方向
+                // Ray ray{eye_pos,ray_dir};
+                // // 路径追踪
+                // color += trace_ray(ray,bvh_data);
+            // }
+            image_data[idx[1] * W + idx[0]] += coord;
         });
     }).wait(); 
 

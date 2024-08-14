@@ -4,6 +4,7 @@ set(CMAKE_C_COMPILER /opt/intel/oneapi/compiler/latest/bin/icx)
 set(CMAKE_CXX_COMPILER /opt/intel/oneapi/compiler/latest/bin/icpx)
 set(IntelSYCL_DIR /opt/intel/oneapi/compiler/latest/lib/cmake/IntelSYCL)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsycl -Wall -Wc++20-extensions")
 
 # 获取 CMakeLists.txt 文件所在目录的绝对路径
 get_filename_component(PROJECT_DIR ${CMAKE_CURRENT_LIST_FILE} DIRECTORY)
