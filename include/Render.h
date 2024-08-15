@@ -1,10 +1,12 @@
 #pragma once
 #include "utils_.h"
 #include <CL/sycl.hpp>
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
 
 sycl::queue init_queue(){
     sycl::queue queue(sycl::default_selector_v); //手动指定GPU设备
-    // sycl::queue queue(sycl::cpu_selector_v); //手动指定GPU设备
+    // sycl::queue queue(sycl::cpu_selector_v); //手动指定CPU设备
     auto sycl_device = queue.get_device();
     auto sycl_context = queue.get_context();
     std::cout<<"*************************device info************************"<<std::endl;
@@ -59,39 +61,40 @@ HitResult hitBVH(Ray &ray,BVHNode* bvh_data){
     // 遍历bvh树，找到ray与三角面的交点
     int stack[256];
     int top = 0;
-    stack[0] = 1;
-
-    int count = 0;
-    while (top >= 0 || count <10){
+    stack[0] = 0;
+    while (top>=0){
         // stack顶端是叶子节点，就继续内部的三角形是否与射线相交(大概率会)
-        if(bvh_data[top].is_leaf){
+        if(bvh_data[stack[top]].is_leaf){
             // 判断相交，保存交点，距离，面法线，发光情况
             res.is_hit = true;
+            // 计算交点
             res.distance = 1.0f;
+            // 计算交点与射线的距离
+
+            // 计算面法线
             break;
         }
         // 计算左右节点与ray的交，交点距离远的先push到stack内
-        auto left = bvh_data[top].left_index;
-        auto right = bvh_data[top].right_index;
+        auto left = bvh_data[stack[top]].left_index;
+        auto right = bvh_data[stack[top]].right_index;
+        stack[top--] = 0;
         float d1 = -FLT_MAX; // 左盒子交点距离
         float d2 = -FLT_MAX; // 右盒子交点距离
         d1 = hitAABB(ray,bvh_data[left].min_xyz,bvh_data[left].max_xyz);
         d2 = hitAABB(ray,bvh_data[right].min_xyz,bvh_data[right].max_xyz);
-        top--;
         if(d1>0 && d2>0) {
             if(d1<d2){
-                stack[top++] = right;
-                stack[top++] = left;
+                stack[++top] = right;
+                stack[++top] = left;
             }else{
-                stack[top++] = left;
-                stack[top++] = right;
+                stack[++top] = left;
+                stack[++top] = right;
             }
         }else if(d1>0){
-            stack[top++] = left;
+            stack[++top] = left;
         }else if(d2>0){
-            stack[top++] = right;
+            stack[++top] = right;
         }
-        count++;
     }
     return res;
 }
@@ -101,7 +104,7 @@ sycl::float3 trace_ray(Ray ray,BVHNode* bvh_data){
     if(hitresult.is_hit){
         return sycl::float3{hitresult.distance,hitresult.distance,hitresult.distance};
     }else{
-        return sycl::float3{0.1,0.1,0.1};
+        return sycl::float3{0,0,0};
     }
 }
 void render(std::vector<BVHNode> &bvhtree, int spp=1){
@@ -119,24 +122,29 @@ void render(std::vector<BVHNode> &bvhtree, int spp=1){
             float x = 2.0 * float(idx[1]) / float(W) - 1.0;
             float y = 2.0 * float(H - idx[0]) / float(H) - 1.0;
             sycl::float3 color = {0,0,0};
-            sycl::float3 eye_pos = {0,0,4}; //眼睛的位置
+            sycl::float3 eye_pos = {0,0,5}; //眼睛的位置
             // for(int i=0;i<spp;i++){
                 // MSAA，在像素点范围内再次随机取样
                 // x += (randf(i*idx[1]-idx[0]) - 0.5f) / float(W);
                 // y += (randf(i*idx[1]+idx[0]) - 0.5f) / float(H);
                 sycl::float3 coord = normalize(x,y,1.0f); //视平面上采样点位置
-                // sycl::float3 ray_dir = normalize(coord - eye_pos); //光线的方向，实际反射的时候是用逆方向
-                // Ray ray{eye_pos,ray_dir};
+                sycl::float3 ray_dir = normalize(coord - eye_pos); //光线的方向，实际反射的时候是用逆方向
+                Ray ray{eye_pos,ray_dir};
                 // // 路径追踪
-                // color += trace_ray(ray,bvh_data);
+                color = trace_ray(ray,bvh_data);
             // }
-            image_data[idx[1] * W + idx[0]] += coord;
+            image_data[idx[0] * W + idx[1]] = color;
         });
     }).wait(); 
 
     //显示结果
-    for(size_t i =0;i<W * H;++i) std::cout<<image_data[i].x()<<",";
-
+    
+    for(size_t h=0;h<H;h++){
+        for(size_t w =0;w<W;w++){
+            std::cout<<image_data[h*W+w].y()<<",";
+        }
+        // std::cout<<"\n";
+    } 
     // 释放USM内存
     sycl::free(bvh_data, queue);
     sycl::free(image_data, queue);

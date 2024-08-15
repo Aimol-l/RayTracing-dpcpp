@@ -4,9 +4,9 @@
 # compile CXX with /opt/intel/oneapi/compiler/latest/bin/icpx
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/include -I/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp -I/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/3rdpart/glm
+CXX_INCLUDES = -I/home/admin/文档/OpenGL/RayTracing/include -I/home/admin/文档/OpenGL/RayTracing -I/home/admin/文档/OpenGL/RayTracing/3rdpart/glm
 
-CXX_FLAGS =  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions
+CXX_FLAGS =  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions -g -Rno-debug-disables-optimization
 
 # Custom options: CMakeFiles/main.dir/src/BVH.cpp.o_OPTIONS = -fsycl
 

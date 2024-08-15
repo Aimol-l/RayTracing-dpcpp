@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/bin/main"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/bin/main.pdb"
+  "/home/admin/文档/OpenGL/RayTracing/bin/main"
+  "/home/admin/文档/OpenGL/RayTracing/bin/main.pdb"
   "CMakeFiles/main.dir/src/BVH.cpp.o"
   "CMakeFiles/main.dir/src/BVH.cpp.o.d"
   "CMakeFiles/main.dir/src/Model.cpp.o"

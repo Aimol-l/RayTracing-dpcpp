@@ -5,16 +5,16 @@ events:
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
-      The system is: Linux - 6.10.4-arch2-1 - x86_64
+      The system is: Linux - 6.6.42-1-lts - x86_64
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /opt/intel/oneapi/compiler/latest/bin/icx 
@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is IntelLLVM, found in:
-        /home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/3.30.2/CompilerIdC/a.out
+        /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/3.30.1/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -36,7 +36,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /opt/intel/oneapi/compiler/latest/bin/icpx 
@@ -50,19 +50,19 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is IntelLLVM, found in:
-        /home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+        /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/3.30.1/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE"
-      binary: "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE"
+      source: "/home/admin/\u6587\u6863/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf"
+      binary: "/home/admin/\u6587\u6863/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -72,31 +72,33 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE'
+        Change Dir: '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb887/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_fb887.dir/build.make CMakeFiles/cmTC_fb887.dir/build
-        make[1]: Entering directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE'
-        Building C object CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o
-        /opt/intel/oneapi/compiler/latest/bin/icx   -v -MD -MT CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb239/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fb239.dir/build.make CMakeFiles/cmTC_fb239.dir/build
+        make[1]: Entering directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf'
+        Building C object CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o
+        /opt/intel/oneapi/compiler/latest/bin/icx   -v -MD -MT CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
         InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler
         Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
-        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /opt/cuda, version 
          (in-process)
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
         #include "..." search starts here:
         #include <...> search starts here:
@@ -105,25 +107,27 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking C executable cmTC_fb887
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb887.dir/link.txt --verbose=1
-        /opt/intel/oneapi/compiler/latest/bin/icx  -v CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -o cmTC_fb887
+        Linking C executable cmTC_fb239
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb239.dir/link.txt --verbose=1
+        /opt/intel/oneapi/compiler/latest/bin/icx  -v CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -o cmTC_fb239
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
         InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler
         Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
-        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /opt/cuda, version 
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb887 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o
-        make[1]: Leaving directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE'
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb239 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o
+        make[1]: Leaving directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf'
         
       exitCode: 0
   -
@@ -131,7 +135,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -153,28 +157,30 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE']
+        ignore line: [Change Dir: '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb887/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fb887.dir/build.make CMakeFiles/cmTC_fb887.dir/build]
-        ignore line: [make[1]: Entering directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE']
-        ignore line: [Building C object CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icx   -v -MD -MT CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb239/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_fb239.dir/build.make CMakeFiles/cmTC_fb239.dir/build]
+        ignore line: [make[1]: Entering directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf']
+        ignore line: [Building C object CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icx   -v -MD -MT CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler]
         ignore line: [Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
         ignore line: [Candidate multilib: .]
         ignore line: [@m64]
         ignore line: [Candidate multilib: 32]
@@ -183,9 +189,9 @@ events:
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-qCKeTE -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-5f7MVf -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
@@ -194,19 +200,21 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_fb887]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb887.dir/link.txt --verbose=1]
-        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icx  -v CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -o cmTC_fb887]
+        ignore line: [Linking C executable cmTC_fb239]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb239.dir/link.txt --verbose=1]
+        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icx  -v CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -o cmTC_fb239]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler]
         ignore line: [Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
         ignore line: [Candidate multilib: .]
         ignore line: [@m64]
         ignore line: [Candidate multilib: 32]
@@ -214,7 +222,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb887 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fb239 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -223,24 +231,24 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_fb887] ==> ignore
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o]
+          arg [cmTC_fb239] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64]
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_fb887.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fb239.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -271,28 +279,28 @@ events:
           arg [-Bstatic] ==> search static
           arg [-lirc_s] ==> lib [irc_s]
           arg [-Bdynamic] ==> search dynamic
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
         linker tool for 'C': /usr/bin/ld
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> [/usr/lib64]
         collapse library dir [/lib/../lib64] ==> [/lib64]
         collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..] ==> [/usr/lib64]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib] ==> [/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib]
         collapse library dir [/lib] ==> [/lib]
         collapse library dir [/usr/lib] ==> [/usr/lib]
         implicit libs: [svml;irng;imf;m;gcc;gcc_s;irc;dl;gcc;gcc_s;c;gcc;gcc_s;irc_s]
-        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o;/usr/lib64/crtn.o]
-        implicit dirs: [/opt/intel/oneapi/compiler/2024.1/lib;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1;/usr/lib64;/lib64;/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib;/lib;/usr/lib]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/opt/intel/oneapi/compiler/2024.1/lib;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1;/usr/lib64;/lib64;/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib;/lib;/usr/lib]
         implicit fwks: []
       
       
@@ -302,21 +310,21 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils) 2.43.0
+      GNU ld (GNU Binutils) 2.42.0
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU"
-      binary: "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU"
+      source: "/home/admin/\u6587\u6863/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF"
+      binary: "/home/admin/\u6587\u6863/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions"
       CMAKE_CXX_FLAGS_DEBUG: "-g -Rno-debug-disables-optimization"
@@ -327,36 +335,38 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU'
+        Change Dir: '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83f63/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_83f63.dir/build.make CMakeFiles/cmTC_83f63.dir/build
-        make[1]: Entering directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU'
-        Building CXX object CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o
-        /opt/intel/oneapi/compiler/latest/bin/icpx   -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions    -v -MD -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_71a80/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_71a80.dir/build.make CMakeFiles/cmTC_71a80.dir/build
+        make[1]: Entering directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF'
+        Building CXX object CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/intel/oneapi/compiler/latest/bin/icpx   -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions    -v -MD -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
         InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler
         Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
-        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /opt/cuda, version 
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -include /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -dependency-filter /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -Eonly -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -include /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -dependency-filter /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -Eonly -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"
@@ -369,26 +379,26 @@ events:
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward
          /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include
          /usr/local/include
          /usr/include
          /opt/cuda/include
         End of search list.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -fsycl-int-header=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-int-footer=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-footer-102f39.h -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-llvm-bc -emit-llvm-uselists -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-sm_50-511ffa.bc -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -fsycl-int-header=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-int-footer=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-footer-9bf82e.h -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-llvm-bc -emit-llvm-uselists -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-sm_50-1f7f84.bc -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include"
         ignoring duplicate directory "/usr/local/include"
         ignoring duplicate directory "/usr/include"
@@ -398,24 +408,24 @@ events:
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward
          /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include
          /usr/local/include
          /usr/include
          /opt/cuda/include
         End of search list.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/append-file" /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --append=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-footer-102f39.h --orig-filename=/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --output=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-269d7b.cpp --use-include
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -include /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -dependency-filter /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -iquote /usr/share/cmake/Modules -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-457e16.o -x c++ /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-269d7b.cpp
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/append-file" /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --append=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-footer-9bf82e.h --orig-filename=/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --output=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-4ab9c5.cpp --use-include
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -include /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -dependency-filter /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -iquote /usr/share/cmake/Modules -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-0a35dc.o -x c++ /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-4ab9c5.cpp
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
-        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
         ignoring nonexistent directory "/include"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"
-        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"
         ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"
@@ -429,91 +439,93 @@ events:
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include
          /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu
-         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward
          /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include
          /usr/local/include
          /usr/include
          /opt/cuda/include
         End of search list.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda-sm_50,host-x86_64-unknown-linux-gnu -output=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -input=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-sm_50-511ffa.bc -input=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-457e16.o -verbose
-        Linking CXX executable cmTC_83f63
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83f63.dir/link.txt --verbose=1
-        /opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions   -v CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_83f63
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda-sm_50,host-x86_64-unknown-linux-gnu -output=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -input=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-sm_50-1f7f84.bc -input=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-0a35dc.o -verbose
+        Linking CXX executable cmTC_71a80
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71a80.dir/link.txt --verbose=1
+        /opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions   -v CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_71a80
         Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
         InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler
         Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0
         Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0
-        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
-        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
         Found CUDA installation: /opt/cuda, version 
-        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -targets=sycl-spir64-unknown-unknown -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -check-section -base-temp-dir=/tmp/icpx-a92a86b792 
-        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -list 
-        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -list 
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=host-x86_64-unknown-linux-gnu,sycl-nvptx64-nvidia-cuda-sm_50 -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -output=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o -output=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-c5d7ef.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -targets=sycl-spir64-unknown-unknown -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -check-section -base-temp-dir=/tmp/icpx-17df2f5718 
+        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -list 
+        /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -list 
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=host-x86_64-unknown-linux-gnu,sycl-nvptx64-nvidia-cuda-sm_50 -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -output=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o -output=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f750e2.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-c5d7ef.cubin -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-176cef.bc --suppress-warnings
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-crt.o -output=/tmp/icpx-a92a86b792/libsycl-crt-eb5612.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f750e2.cubin -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-001572.bc --suppress-warnings
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-crt.o -output=/tmp/icpx-17df2f5718/libsycl-crt-ecf36b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex.o -output=/tmp/icpx-a92a86b792/libsycl-complex-771dcc.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex.o -output=/tmp/icpx-17df2f5718/libsycl-complex-1d940e.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-complex-fp64-15f205.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-complex-fp64-e892e9.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath.o -output=/tmp/icpx-a92a86b792/libsycl-cmath-4cb139.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath.o -output=/tmp/icpx-17df2f5718/libsycl-cmath-0d05ef.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-cmath-fp64-14070f.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-cmath-fp64-7ef837.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf.o -output=/tmp/icpx-a92a86b792/libsycl-imf-6fab5b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf.o -output=/tmp/icpx-17df2f5718/libsycl-imf-b13a59.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-imf-fp64-dc3f9f.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-imf-fp64-666fa6.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-bf16.o -output=/tmp/icpx-a92a86b792/libsycl-imf-bf16-ba4ac4.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-bf16.o -output=/tmp/icpx-17df2f5718/libsycl-imf-bf16-e8f7bd.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cassert.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cassert-001b14.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cassert.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cassert-1bb109.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cstring.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cstring-429599.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cstring.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cstring-0770fa.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-complex-4f8ead.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-complex-7aca51.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-complex-fp64-a89d72.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-complex-fp64-3b79a1.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cmath-c2c0d8.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cmath-08af05.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cmath-fp64-5d868a.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cmath-fp64-c10720.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-acc316.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-037736.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-fp64-d55540.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-fp64-2a1e46.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-bf16.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-bf16-3e8cbf.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-bf16.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-bf16-f7160b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-user-wrappers.o -output=/tmp/icpx-a92a86b792/libsycl-itt-user-wrappers-f71b7e.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-user-wrappers.o -output=/tmp/icpx-17df2f5718/libsycl-itt-user-wrappers-7041f4.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-compiler-wrappers.o -output=/tmp/icpx-a92a86b792/libsycl-itt-compiler-wrappers-4cbc23.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-compiler-wrappers.o -output=/tmp/icpx-17df2f5718/libsycl-itt-compiler-wrappers-6c5637.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-stubs.o -output=/tmp/icpx-a92a86b792/libsycl-itt-stubs-6d0301.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-stubs.o -output=/tmp/icpx-17df2f5718/libsycl-itt-stubs-64adbd.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose
         Uncompressed bundle.
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" -only-needed /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-176cef.bc /tmp/icpx-a92a86b792/libsycl-crt-eb5612.cubin /tmp/icpx-a92a86b792/libsycl-complex-771dcc.cubin /tmp/icpx-a92a86b792/libsycl-complex-fp64-15f205.cubin /tmp/icpx-a92a86b792/libsycl-cmath-4cb139.cubin /tmp/icpx-a92a86b792/libsycl-cmath-fp64-14070f.cubin /tmp/icpx-a92a86b792/libsycl-imf-6fab5b.cubin /tmp/icpx-a92a86b792/libsycl-imf-fp64-dc3f9f.cubin /tmp/icpx-a92a86b792/libsycl-imf-bf16-ba4ac4.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cassert-001b14.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cstring-429599.cubin /tmp/icpx-a92a86b792/libsycl-fallback-complex-4f8ead.cubin /tmp/icpx-a92a86b792/libsycl-fallback-complex-fp64-a89d72.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cmath-c2c0d8.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cmath-fp64-5d868a.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-acc316.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-fp64-d55540.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-bf16-3e8cbf.cubin /tmp/icpx-a92a86b792/libsycl-itt-user-wrappers-f71b7e.cubin /tmp/icpx-a92a86b792/libsycl-itt-compiler-wrappers-4cbc23.cubin /tmp/icpx-a92a86b792/libsycl-itt-stubs-6d0301.cubin /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc /opt/cuda/nvvm/libdevice/libdevice.10.bc -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-9d7e3b.bc --suppress-warnings
-         "/opt/intel/oneapi/compiler/latest/bin/sycl-post-link" -split=auto -emit-param-info -emit-program-metadata -symbols -emit-exported-symbols -lower-esimd -O2 -spec-const=emulation -device-globals -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-9d7e3b.bc
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -extract=Code -drop_titles -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=s --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s -- /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -sycl-std=2020 -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -S -dumpdir cmTC_83f63- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp.o -fsycl-use-main-file-name -full-main-file-name CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -O2 -Wall -Wc++20-extensions -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s -x ir /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" -only-needed /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-001572.bc /tmp/icpx-17df2f5718/libsycl-crt-ecf36b.cubin /tmp/icpx-17df2f5718/libsycl-complex-1d940e.cubin /tmp/icpx-17df2f5718/libsycl-complex-fp64-e892e9.cubin /tmp/icpx-17df2f5718/libsycl-cmath-0d05ef.cubin /tmp/icpx-17df2f5718/libsycl-cmath-fp64-7ef837.cubin /tmp/icpx-17df2f5718/libsycl-imf-b13a59.cubin /tmp/icpx-17df2f5718/libsycl-imf-fp64-666fa6.cubin /tmp/icpx-17df2f5718/libsycl-imf-bf16-e8f7bd.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cassert-1bb109.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cstring-0770fa.cubin /tmp/icpx-17df2f5718/libsycl-fallback-complex-7aca51.cubin /tmp/icpx-17df2f5718/libsycl-fallback-complex-fp64-3b79a1.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cmath-08af05.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cmath-fp64-c10720.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-037736.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-fp64-2a1e46.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-bf16-f7160b.cubin /tmp/icpx-17df2f5718/libsycl-itt-user-wrappers-7041f4.cubin /tmp/icpx-17df2f5718/libsycl-itt-compiler-wrappers-6c5637.cubin /tmp/icpx-17df2f5718/libsycl-itt-stubs-64adbd.cubin /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc /opt/cuda/nvvm/libdevice/libdevice.10.bc -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4d75bb.bc --suppress-warnings
+         "/opt/intel/oneapi/compiler/latest/bin/sycl-post-link" -split=auto -emit-param-info -emit-program-metadata -symbols -emit-exported-symbols -lower-esimd -O2 -spec-const=emulation -device-globals -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4d75bb.bc
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -extract=Code -drop_titles -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=s --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s -- /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -sycl-std=2020 -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -S -dumpdir cmTC_71a80- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp.o -fsycl-use-main-file-name -full-main-file-name CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -O2 -Wall -Wc++20-extensions -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s -x ir /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc
         clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=o --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin -- /opt/cuda/bin/ptxas -m64 -O2 -v --gpu-name sm_50 --output-file /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=o --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin -- /opt/cuda/bin/ptxas -m64 -O2 -v --gpu-name sm_50 --output-file /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s
         ptxas info    : 0 bytes gmem
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=fatbin --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin -- /opt/cuda/bin/fatbinary -64 --create /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin --image=profile=compute_50,file=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --image=profile=sm_50,file=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -replace=Code,Code -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-8d5138.table /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-wrapper" -o=/tmp/icpx-a92a86b792/wrapper-257165.bc -host=x86_64-unknown-linux-gnu -target=nvptx64 -kind=sycl -batch /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-8d5138.table
-         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llc" -filetype=obj -o /tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o /tmp/icpx-a92a86b792/wrapper-257165.bc
-         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_83f63 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o /tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lsycl -lsycl-devicelib-host -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o
-        make[1]: Leaving directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU'
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=fatbin --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin -- /opt/cuda/bin/fatbinary -64 --create /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin --image=profile=compute_50,file=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --image=profile=sm_50,file=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -replace=Code,Code -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-7e59a6.table /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-wrapper" -o=/tmp/icpx-17df2f5718/wrapper-3d721e.bc -host=x86_64-unknown-linux-gnu -target=nvptx64 -kind=sycl -batch /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-7e59a6.table
+         "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llc" -filetype=obj -o /tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o /tmp/icpx-17df2f5718/wrapper-3d721e.bc
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_71a80 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o /tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lsycl -lsycl-devicelib-host -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o
+        make[1]: Leaving directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF'
         
       exitCode: 0
   -
@@ -521,7 +533,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -530,9 +542,9 @@ events:
           add: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers]
           add: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include]
           add: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include]
-          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
-          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu]
-          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
           add: [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include]
           add: [/usr/local/include]
           add: [/usr/include]
@@ -542,14 +554,14 @@ events:
         collapse include dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers] ==> [/opt/intel/oneapi/compiler/2024.1/include/sycl/stl_wrappers]
         collapse include dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include] ==> [/opt/intel/oneapi/compiler/2024.1/include]
         collapse include dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include] ==> [/opt/intel/oneapi/compiler/2024.1/opt/compiler/include]
-        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1] ==> [/usr/include/c++/14.2.1]
-        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/14.2.1/x86_64-pc-linux-gnu]
-        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward] ==> [/usr/include/c++/14.2.1/backward]
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1] ==> [/usr/include/c++/14.1.1]
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/14.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward] ==> [/usr/include/c++/14.1.1/backward]
         collapse include dir [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include] ==> [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include]
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/usr/include] ==> [/usr/include]
         collapse include dir [/opt/cuda/include] ==> [/opt/cuda/include]
-        implicit include dirs: [/opt/intel/oneapi/compiler/2024.1/include/sycl;/opt/intel/oneapi/compiler/2024.1/include/sycl/stl_wrappers;/opt/intel/oneapi/compiler/2024.1/include;/opt/intel/oneapi/compiler/2024.1/opt/compiler/include;/usr/include/c++/14.2.1;/usr/include/c++/14.2.1/x86_64-pc-linux-gnu;/usr/include/c++/14.2.1/backward;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include;/usr/local/include;/usr/include;/opt/cuda/include]
+        implicit include dirs: [/opt/intel/oneapi/compiler/2024.1/include/sycl;/opt/intel/oneapi/compiler/2024.1/include/sycl/stl_wrappers;/opt/intel/oneapi/compiler/2024.1/include;/opt/intel/oneapi/compiler/2024.1/opt/compiler/include;/usr/include/c++/14.1.1;/usr/include/c++/14.1.1/x86_64-pc-linux-gnu;/usr/include/c++/14.1.1/backward;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include;/usr/local/include;/usr/include;/opt/cuda/include]
       
       
   -
@@ -557,28 +569,30 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU']
+        ignore line: [Change Dir: '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_83f63/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_83f63.dir/build.make CMakeFiles/cmTC_83f63.dir/build]
-        ignore line: [make[1]: Entering directory '/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU']
-        ignore line: [Building CXX object CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icpx   -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions    -v -MD -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_71a80/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_71a80.dir/build.make CMakeFiles/cmTC_71a80.dir/build]
+        ignore line: [make[1]: Entering directory '/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icpx   -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions    -v -MD -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler]
         ignore line: [Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
         ignore line: [Candidate multilib: .]
         ignore line: [@m64]
         ignore line: [Candidate multilib: 32]
@@ -586,15 +600,15 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -include /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -dependency-filter /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -Eonly -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -include /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -dependency-filter /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -Eonly -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"]
@@ -607,26 +621,26 @@ events:
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include]
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [ /opt/cuda/include]
         ignore line: [End of search list.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -fsycl-int-header=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-int-footer=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-footer-102f39.h -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-llvm-bc -emit-llvm-uselists -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-sm_50-511ffa.bc -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -fsycl-int-header=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-int-footer=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-footer-9bf82e.h -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-llvm-bc -emit-llvm-uselists -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -dependency-file CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-sm_50-1f7f84.bc -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/lib/clang/18/include"]
         ignore line: [ignoring duplicate directory "/usr/local/include"]
         ignore line: [ignoring duplicate directory "/usr/include"]
@@ -636,24 +650,24 @@ events:
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include]
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [ /opt/cuda/include]
         ignore line: [End of search list.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/append-file" /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --append=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-footer-102f39.h --orig-filename=/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --output=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-269d7b.cpp --use-include]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uidae937ea127dcaceb -include /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -dependency-filter /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-header-95422c.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fcoverage-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -iquote /usr/share/cmake/Modules -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-457e16.o -x c++ /tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-269d7b.cpp]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/append-file" /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --append=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-footer-9bf82e.h --orig-filename=/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp --output=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-4ab9c5.cpp --use-include]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -sycl-std=2020 -fsycl-unique-prefix=uide9c52752a6ee539b -include /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -dependency-filter /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-header-0c3a2f.h -fsycl-enable-int-header-diags -fsycl-is-host -D __SYCL_NATIVE_CPU__ -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -fsycl-use-main-file-name -full-main-file-name /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic --dependent-lib=sycl-devicelib-host -debugger-tuning=gdb -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fcoverage-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -iquote /usr/share/cmake/Modules -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -internal-isystem /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /opt/cuda/include -O2 -Wall -Wc++20-extensions -std=c++17 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -sycl-host -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-0a35dc.o -x c++ /tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-4ab9c5.cpp]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu"]
-        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers"]
         ignore line: [ignoring duplicate directory "/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include"]
@@ -667,28 +681,30 @@ events:
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/include]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-pc-linux-gnu]
-        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
         ignore line: [ /opt/intel/oneapi/compiler/2024.1/lib/clang/18/include]
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [ /opt/cuda/include]
         ignore line: [End of search list.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda-sm_50 host-x86_64-unknown-linux-gnu -output=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -input=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-sm_50-511ffa.bc -input=/tmp/icpx-8fe6e276e7/CMakeCXXCompilerABI-457e16.o -verbose]
-        ignore line: [Linking CXX executable cmTC_83f63]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83f63.dir/link.txt --verbose=1]
-        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions   -v CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_83f63]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda-sm_50 host-x86_64-unknown-linux-gnu -output=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -input=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-sm_50-1f7f84.bc -input=/tmp/icpx-cf90f6e8d9/CMakeCXXCompilerABI-0a35dc.o -verbose]
+        ignore line: [Linking CXX executable cmTC_71a80]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71a80.dir/link.txt --verbose=1]
+        ignore line: [/opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions   -v CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_71a80]
         ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.1.0 (2024.1.0.20240308)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /opt/intel/oneapi/compiler/2024.1/bin/compiler]
         ignore line: [Configuration file: /opt/intel/oneapi/compiler/2024.1/bin/compiler/../icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/11.4.0]
         ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/13.3.0]
-        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
         ignore line: [Candidate multilib: .]
         ignore line: [@m64]
         ignore line: [Candidate multilib: 32]
@@ -696,64 +712,64 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [Found CUDA installation: /opt/cuda  version ]
-        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -targets=sycl-spir64-unknown-unknown -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -check-section -base-temp-dir=/tmp/icpx-a92a86b792 ]
-        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -list ]
-        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -list ]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=host-x86_64-unknown-linux-gnu sycl-nvptx64-nvidia-cuda-sm_50 -input=CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -output=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o -output=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-c5d7ef.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -targets=sycl-spir64-unknown-unknown -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -check-section -base-temp-dir=/tmp/icpx-17df2f5718 ]
+        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -list ]
+        ignore line: [/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler -type=o -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -list ]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=host-x86_64-unknown-linux-gnu sycl-nvptx64-nvidia-cuda-sm_50 -input=CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -output=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o -output=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f750e2.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-c5d7ef.cubin -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-176cef.bc --suppress-warnings]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-crt.o -output=/tmp/icpx-a92a86b792/libsycl-crt-eb5612.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f750e2.cubin -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-001572.bc --suppress-warnings]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-crt.o -output=/tmp/icpx-17df2f5718/libsycl-crt-ecf36b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex.o -output=/tmp/icpx-a92a86b792/libsycl-complex-771dcc.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex.o -output=/tmp/icpx-17df2f5718/libsycl-complex-1d940e.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-complex-fp64-15f205.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-complex-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-complex-fp64-e892e9.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath.o -output=/tmp/icpx-a92a86b792/libsycl-cmath-4cb139.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath.o -output=/tmp/icpx-17df2f5718/libsycl-cmath-0d05ef.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-cmath-fp64-14070f.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-cmath-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-cmath-fp64-7ef837.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf.o -output=/tmp/icpx-a92a86b792/libsycl-imf-6fab5b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf.o -output=/tmp/icpx-17df2f5718/libsycl-imf-b13a59.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-imf-fp64-dc3f9f.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-imf-fp64-666fa6.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-bf16.o -output=/tmp/icpx-a92a86b792/libsycl-imf-bf16-ba4ac4.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-imf-bf16.o -output=/tmp/icpx-17df2f5718/libsycl-imf-bf16-e8f7bd.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cassert.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cassert-001b14.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cassert.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cassert-1bb109.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cstring.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cstring-429599.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cstring.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cstring-0770fa.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-complex-4f8ead.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-complex-7aca51.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-complex-fp64-a89d72.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-complex-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-complex-fp64-3b79a1.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cmath-c2c0d8.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cmath-08af05.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-cmath-fp64-5d868a.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-cmath-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-cmath-fp64-c10720.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-acc316.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-037736.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-fp64.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-fp64-d55540.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-fp64.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-fp64-2a1e46.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-bf16.o -output=/tmp/icpx-a92a86b792/libsycl-fallback-imf-bf16-3e8cbf.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-fallback-imf-bf16.o -output=/tmp/icpx-17df2f5718/libsycl-fallback-imf-bf16-f7160b.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-user-wrappers.o -output=/tmp/icpx-a92a86b792/libsycl-itt-user-wrappers-f71b7e.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-user-wrappers.o -output=/tmp/icpx-17df2f5718/libsycl-itt-user-wrappers-7041f4.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-compiler-wrappers.o -output=/tmp/icpx-a92a86b792/libsycl-itt-compiler-wrappers-4cbc23.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-compiler-wrappers.o -output=/tmp/icpx-17df2f5718/libsycl-itt-compiler-wrappers-6c5637.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-stubs.o -output=/tmp/icpx-a92a86b792/libsycl-itt-stubs-6d0301.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-a92a86b792 -verbose]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-bundler" -type=o -targets=sycl-nvptx64-nvidia-cuda -input=/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib/libsycl-itt-stubs.o -output=/tmp/icpx-17df2f5718/libsycl-itt-stubs-64adbd.cubin -unbundle -allow-missing-bundles -base-temp-dir=/tmp/icpx-17df2f5718 -verbose]
         ignore line: [Uncompressed bundle.]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" -only-needed /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-176cef.bc /tmp/icpx-a92a86b792/libsycl-crt-eb5612.cubin /tmp/icpx-a92a86b792/libsycl-complex-771dcc.cubin /tmp/icpx-a92a86b792/libsycl-complex-fp64-15f205.cubin /tmp/icpx-a92a86b792/libsycl-cmath-4cb139.cubin /tmp/icpx-a92a86b792/libsycl-cmath-fp64-14070f.cubin /tmp/icpx-a92a86b792/libsycl-imf-6fab5b.cubin /tmp/icpx-a92a86b792/libsycl-imf-fp64-dc3f9f.cubin /tmp/icpx-a92a86b792/libsycl-imf-bf16-ba4ac4.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cassert-001b14.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cstring-429599.cubin /tmp/icpx-a92a86b792/libsycl-fallback-complex-4f8ead.cubin /tmp/icpx-a92a86b792/libsycl-fallback-complex-fp64-a89d72.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cmath-c2c0d8.cubin /tmp/icpx-a92a86b792/libsycl-fallback-cmath-fp64-5d868a.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-acc316.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-fp64-d55540.cubin /tmp/icpx-a92a86b792/libsycl-fallback-imf-bf16-3e8cbf.cubin /tmp/icpx-a92a86b792/libsycl-itt-user-wrappers-f71b7e.cubin /tmp/icpx-a92a86b792/libsycl-itt-compiler-wrappers-4cbc23.cubin /tmp/icpx-a92a86b792/libsycl-itt-stubs-6d0301.cubin /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc /opt/cuda/nvvm/libdevice/libdevice.10.bc -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-9d7e3b.bc --suppress-warnings]
-        ignore line: [ "/opt/intel/oneapi/compiler/latest/bin/sycl-post-link" -split=auto -emit-param-info -emit-program-metadata -symbols -emit-exported-symbols -lower-esimd -O2 -spec-const=emulation -device-globals -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-9d7e3b.bc]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -extract=Code -drop_titles -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=s --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s -- /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -sycl-std=2020 -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -S -dumpdir cmTC_83f63- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp.o -fsycl-use-main-file-name -full-main-file-name CMakeFiles/cmTC_83f63.dir/CMakeCXXCompilerABI.cpp.o -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/build/CMakeFiles/CMakeScratch/TryCompile-3li6fU -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -O2 -Wall -Wc++20-extensions -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s -x ir /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51b7d2.bc]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-link" -only-needed /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-001572.bc /tmp/icpx-17df2f5718/libsycl-crt-ecf36b.cubin /tmp/icpx-17df2f5718/libsycl-complex-1d940e.cubin /tmp/icpx-17df2f5718/libsycl-complex-fp64-e892e9.cubin /tmp/icpx-17df2f5718/libsycl-cmath-0d05ef.cubin /tmp/icpx-17df2f5718/libsycl-cmath-fp64-7ef837.cubin /tmp/icpx-17df2f5718/libsycl-imf-b13a59.cubin /tmp/icpx-17df2f5718/libsycl-imf-fp64-666fa6.cubin /tmp/icpx-17df2f5718/libsycl-imf-bf16-e8f7bd.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cassert-1bb109.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cstring-0770fa.cubin /tmp/icpx-17df2f5718/libsycl-fallback-complex-7aca51.cubin /tmp/icpx-17df2f5718/libsycl-fallback-complex-fp64-3b79a1.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cmath-08af05.cubin /tmp/icpx-17df2f5718/libsycl-fallback-cmath-fp64-c10720.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-037736.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-fp64-2a1e46.cubin /tmp/icpx-17df2f5718/libsycl-fallback-imf-bf16-f7160b.cubin /tmp/icpx-17df2f5718/libsycl-itt-user-wrappers-7041f4.cubin /tmp/icpx-17df2f5718/libsycl-itt-compiler-wrappers-6c5637.cubin /tmp/icpx-17df2f5718/libsycl-itt-stubs-64adbd.cubin /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc /opt/cuda/nvvm/libdevice/libdevice.10.bc -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4d75bb.bc --suppress-warnings]
+        ignore line: [ "/opt/intel/oneapi/compiler/latest/bin/sycl-post-link" -split=auto -emit-param-info -emit-program-metadata -symbols -emit-exported-symbols -lower-esimd -O2 -spec-const=emulation -device-globals -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4d75bb.bc]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -extract=Code -drop_titles -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=s --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s -- /opt/intel/oneapi/compiler/2024.1/bin/compiler/clang -cc1 -triple nvptx64-nvidia-cuda -aux-triple x86_64-unknown-linux-gnu -fsycl-is-device -fdeclare-spirv-builtins -fenable-sycl-dae -Wno-sycl-strict -sycl-std=2020 -D__SYCL_TARGET_NVIDIA_GPU_SM_50__ -D__SYCL_ANY_DEVICE_HAS_ANY_ASPECT__=1 -S -dumpdir cmTC_71a80- -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp.o -fsycl-use-main-file-name -full-main-file-name CMakeFiles/cmTC_71a80.dir/CMakeCXXCompilerABI.cpp.o -mrelocation-model static -fveclib=SVML -mframe-pointer=all -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -no-integrated-as -aux-target-cpu x86-64 -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include/sycl/stl_wrappers -internal-isystem /opt/intel/oneapi/compiler/2024.1/bin/compiler/../../include -mlink-builtin-bitcode /opt/intel/oneapi/compiler/2024.1/lib/clang/18/../../clc/remangled-l64-signed_char.libspirv-nvptx64-nvidia-cuda.bc -mlink-builtin-bitcode /opt/cuda/nvvm/libdevice/libdevice.10.bc -target-sdk-version=12.1 -target-cpu sm_50 -target-feature +ptx81 -debugger-tuning=gdb -fno-dwarf-directory-asm -fdebug-compilation-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/CMakeScratch/TryCompile-ZDWPBF -v -fclang-abi-compat=17 -resource-dir /opt/intel/oneapi/compiler/2024.1/lib/clang/18 -O2 -Wall -Wc++20-extensions -ferror-limit 19 -fheinous-gnu-extensions -fgpu-rdc -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -fintel-compatibility -fintel-compatibility-disable=FakeLoad -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s -x ir /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-783b93.bc]
         ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-unknown-linux-gnu]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=o --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin -- /opt/cuda/bin/ptxas -m64 -O2 -v --gpu-name sm_50 --output-file /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=o --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin -- /opt/cuda/bin/ptxas -m64 -O2 -v --gpu-name sm_50 --output-file /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s]
         ignore line: [ptxas info    : 0 bytes gmem]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=fatbin --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --in-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --in-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin --out-file-list=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin --out-replace=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin -- /opt/cuda/bin/fatbinary -64 --create /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin --image=profile=compute_50 file=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-51f1d1.s --image=profile=sm_50 file=/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-44e47f.cubin]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -replace=Code Code -o /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-8d5138.table /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-e69624.bc /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-60cdef.fatbin]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-wrapper" -o=/tmp/icpx-a92a86b792/wrapper-257165.bc -host=x86_64-unknown-linux-gnu -target=nvptx64 -kind=sycl -batch /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-sm_50-8d5138.table]
-        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llc" -filetype=obj -o /tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o /tmp/icpx-a92a86b792/wrapper-257165.bc]
-        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_83f63 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib /tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o /tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lsycl -lsycl-devicelib-host -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llvm-foreach" --out-ext=fatbin --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --in-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --in-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin --out-file-list=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin --out-replace=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin -- /opt/cuda/bin/fatbinary -64 --create /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin --image=profile=compute_50 file=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-f0f462.s --image=profile=sm_50 file=/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-cd66a2.cubin]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/file-table-tform" -replace=Code Code -o /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-7e59a6.table /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-ba2c03.bc /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-4efb3b.fatbin]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/clang-offload-wrapper" -o=/tmp/icpx-17df2f5718/wrapper-3d721e.bc -host=x86_64-unknown-linux-gnu -target=nvptx64 -kind=sycl -batch /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-sm_50-7e59a6.table]
+        ignore line: [ "/opt/intel/oneapi/compiler/2024.1/bin/compiler/llc" -filetype=obj -o /tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o /tmp/icpx-17df2f5718/wrapper-3d721e.bc]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_71a80 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../.. -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib -L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib /tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o /tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lsycl -lsycl-devicelib-host -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
@@ -762,25 +778,25 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_83f63] ==> ignore
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o]
+          arg [cmTC_71a80] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> dir [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64]
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib]
           arg [-L/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib] ==> dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o] ==> obj [/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o]
-          arg [/tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o] ==> obj [/tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o]
+          arg [/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o] ==> obj [/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o]
+          arg [/tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o] ==> obj [/tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o]
           arg [-Bstatic] ==> search static
           arg [-lsvml] ==> lib [svml]
           arg [-Bdynamic] ==> search dynamic
@@ -808,28 +824,28 @@ events:
           arg [-Bstatic] ==> search static
           arg [-lirc_s] ==> lib [irc_s]
           arg [-Bdynamic] ==> search dynamic
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o]
-          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
-        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu] ==> [/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> [/usr/lib64]
         collapse library dir [/lib/../lib64] ==> [/lib64]
         collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../..] ==> [/usr/lib64]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../lib] ==> [/opt/intel/oneapi/compiler/2024.1/lib]
         collapse library dir [/opt/intel/oneapi/compiler/2024.1/bin/compiler/../../opt/compiler/lib] ==> [/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib]
         collapse library dir [/lib] ==> [/lib]
         collapse library dir [/usr/lib] ==> [/usr/lib]
         implicit libs: [svml;irng;stdc++;imf;m;gcc_s;gcc;irc;dl;gcc_s;gcc;sycl;sycl-devicelib-host;c;gcc_s;gcc;irc_s]
-        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o;/tmp/icpx-a92a86b792/CMakeCXXCompilerABI-921a62.o;/tmp/icpx-a92a86b792/cmTC_83f63-wrapper-sm_50-599006.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o;/usr/lib64/crtn.o]
-        implicit dirs: [/opt/intel/oneapi/compiler/2024.1/lib;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.2.1;/usr/lib64;/lib64;/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib;/lib;/usr/lib]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o;/tmp/icpx-17df2f5718/CMakeCXXCompilerABI-8b460d.o;/tmp/icpx-17df2f5718/cmTC_71a80-wrapper-sm_50-c2e0d7.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/opt/intel/oneapi/compiler/2024.1/lib;/opt/intel/oneapi/compiler/2024.1/lib/clang/18/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1;/usr/lib64;/lib64;/opt/intel/oneapi/compiler/2024.1/opt/compiler/lib;/lib;/usr/lib]
         implicit fwks: []
       
       
@@ -839,8 +855,8 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:14 (project)"
+      - "CMakeLists.txt:15 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils) 2.43.0
+      GNU ld (GNU Binutils) 2.42.0
 ...

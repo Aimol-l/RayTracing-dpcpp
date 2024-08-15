@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/3rdpart/CMakeLists.txt"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/3rdpart/glm/CMakeLists.txt"
-  "/home/aimol/Documents/C++/OpenGL/RayTracing-dpcpp/CMakeLists.txt"
-  "CMakeFiles/3.30.2/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.2/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.2/CMakeSystem.cmake"
+  "/home/admin/文档/OpenGL/RayTracing/3rdpart/CMakeLists.txt"
+  "/home/admin/文档/OpenGL/RayTracing/3rdpart/glm/CMakeLists.txt"
+  "/home/admin/文档/OpenGL/RayTracing/CMakeLists.txt"
+  "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeSystem.cmake"
   "CMakeFiles/VerifyGlobs.cmake"
   "CMakeFiles/cmake.verify_globs"
   "/opt/intel/oneapi/compiler/latest/lib/cmake/IntelSYCL/IntelSYCLConfig.cmake"

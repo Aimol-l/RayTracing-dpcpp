@@ -74,4 +74,5 @@ Model::Model(const std::string &path,const Material mater){
         }
     }
     inputFile.close();
+    ut::println("obj readed!");
 }
