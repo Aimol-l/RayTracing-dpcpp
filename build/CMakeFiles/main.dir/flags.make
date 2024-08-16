@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/admin/文档/OpenGL/RayTracing/include -I/home/admin/文档/OpenGL/RayTracing -I/home/admin/文档/OpenGL/RayTracing/3rdpart/glm
 
-CXX_FLAGS =  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions -g -Rno-debug-disables-optimization
+CXX_FLAGS =  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions
 
 # Custom options: CMakeFiles/main.dir/src/BVH.cpp.o_OPTIONS = -fsycl
 

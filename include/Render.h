@@ -101,11 +101,10 @@ HitResult hitBVH(Ray &ray,BVHNode* bvh_data){
 sycl::float3 trace_ray(Ray ray,BVHNode* bvh_data){
     // 需要利用bvh树判断ray是否和bbox相交
     HitResult hitresult = hitBVH(ray,bvh_data);
-    if(hitresult.is_hit){
-        return sycl::float3{hitresult.distance,hitresult.distance,hitresult.distance};
-    }else{
-        return sycl::float3{0,0,0};
-    }
+    sycl::float3 hitcolor{0,0,0};
+    if(!hitresult.is_hit) return hitcolor;
+    // 如果ray打中了三角形，那么需要进行反射
+    return sycl::float3{hitresult.distance,hitresult.distance,hitresult.distance};
 }
 void render(std::vector<BVHNode> &bvhtree, int spp=1){
     sycl::queue queue = init_queue();

@@ -72,43 +72,43 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/BVH.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/BVH.cpp.o: /home/admin/文档/OpenGL/RayTracing/src/BVH.cpp
 CMakeFiles/main.dir/src/BVH.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/BVH.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/BVH.cpp.o"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -MD -MT CMakeFiles/main.dir/src/BVH.cpp.o -MF CMakeFiles/main.dir/src/BVH.cpp.o.d -o CMakeFiles/main.dir/src/BVH.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/BVH.cpp
 
 CMakeFiles/main.dir/src/BVH.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/BVH.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/main.dir/src/BVH.cpp.i"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -E /home/admin/文档/OpenGL/RayTracing/src/BVH.cpp > CMakeFiles/main.dir/src/BVH.cpp.i
 
 CMakeFiles/main.dir/src/BVH.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/BVH.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/main.dir/src/BVH.cpp.s"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -S /home/admin/文档/OpenGL/RayTracing/src/BVH.cpp -o CMakeFiles/main.dir/src/BVH.cpp.s
 
 CMakeFiles/main.dir/src/Model.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Model.cpp.o: /home/admin/文档/OpenGL/RayTracing/src/Model.cpp
 CMakeFiles/main.dir/src/Model.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Model.cpp.o"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -MD -MT CMakeFiles/main.dir/src/Model.cpp.o -MF CMakeFiles/main.dir/src/Model.cpp.o.d -o CMakeFiles/main.dir/src/Model.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/Model.cpp
 
 CMakeFiles/main.dir/src/Model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Model.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/main.dir/src/Model.cpp.i"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -E /home/admin/文档/OpenGL/RayTracing/src/Model.cpp > CMakeFiles/main.dir/src/Model.cpp.i
 
 CMakeFiles/main.dir/src/Model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Model.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/main.dir/src/Model.cpp.s"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -S /home/admin/文档/OpenGL/RayTracing/src/Model.cpp -o CMakeFiles/main.dir/src/Model.cpp.s
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: /home/admin/文档/OpenGL/RayTracing/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /home/admin/文档/OpenGL/RayTracing/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -E /home/admin/文档/OpenGL/RayTracing/src/main.cpp > CMakeFiles/main.dir/src/main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	/opt/intel/oneapi/compiler/latest/bin/icpx $(CXX_DEFINES) -I/opt/intel/oneapi/compiler/2024.1/include $(CXX_INCLUDES) $(CXX_FLAGS) -fsycl -S /home/admin/文档/OpenGL/RayTracing/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
 # Object files for target main
@@ -125,7 +125,7 @@ main_EXTERNAL_OBJECTS =
 /home/admin/文档/OpenGL/RayTracing/bin/main: CMakeFiles/main.dir/src/main.cpp.o
 /home/admin/文档/OpenGL/RayTracing/bin/main: CMakeFiles/main.dir/build.make
 /home/admin/文档/OpenGL/RayTracing/bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/admin/文档/OpenGL/RayTracing/bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/admin/文档/OpenGL/RayTracing/bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/admin/文档/OpenGL/RayTracing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/文档/OpenGL/RayTracing /home/admin/文档/OpenGL/RayTracing /home/admin/文档/OpenGL/RayTracing/build /home/admin/文档/OpenGL/RayTracing/build /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin/文档/OpenGL/RayTracing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/文档/OpenGL/RayTracing /home/admin/文档/OpenGL/RayTracing /home/admin/文档/OpenGL/RayTracing/build /home/admin/文档/OpenGL/RayTracing/build /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/main.dir/DependInfo.cmake
 .PHONY : CMakeFiles/main.dir/depend
 

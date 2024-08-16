@@ -1,1 +1,1 @@
-/opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions -g -Rno-debug-disables-optimization -fsycl CMakeFiles/main.dir/src/BVH.cpp.o CMakeFiles/main.dir/src/Model.cpp.o CMakeFiles/main.dir/src/main.cpp.o -o /home/admin/文档/OpenGL/RayTracing/bin/main
+/opt/intel/oneapi/compiler/latest/bin/icpx  -fsycl -Wall -fsycl-targets=nvptx64-nvidia-cuda -Wc++20-extensions -fsycl CMakeFiles/main.dir/src/BVH.cpp.o CMakeFiles/main.dir/src/Model.cpp.o CMakeFiles/main.dir/src/main.cpp.o -o /home/admin/文档/OpenGL/RayTracing/bin/main
