@@ -98,13 +98,40 @@ HitResult hitBVH(Ray &ray,BVHNode* bvh_data){
     }
     return res;
 }
-sycl::float3 trace_ray(Ray ray,BVHNode* bvh_data){
-    // 需要利用bvh树判断ray是否和bbox相交
-    HitResult hitresult = hitBVH(ray,bvh_data);
-    sycl::float3 hitcolor{0,0,0};
-    if(!hitresult.is_hit) return hitcolor;
-    // 如果ray打中了三角形，那么需要进行反射
-    return sycl::float3{hitresult.distance,hitresult.distance,hitresult.distance};
+
+// 循环
+sycl::float3 trace_ray(Ray ray_,BVHNode* bvh_data){
+    sycl::float3 finally{0,0,0};
+    sycl::float3 history{0,0,0};
+    Ray ray = ray_;
+    while(true){
+        HitResult hitresult = hitBVH(ray,bvh_data);
+        // 击中了光源
+        if(hitresult.is_hit && (hitresult.emit.x()!=0 || hitresult.emit.y()!=0||hitresult.emit.z()!=0)){
+            finally += hitresult.emit;
+            break;
+        }
+        // 击中了物体，需要进行计算间接光照和直接光照
+        sycl::float3 w_out = normalize(-ray.direction); // 射线的反反向
+        sycl::float3 p = hitresult.hitpoint;    // 光线与三角面的交点
+        sycl::float3 N = hitresult.normal;
+        float pdf_light = 0.0f;
+
+        /*
+            计算直接光照：
+            直接光源和反射点之间是否具有遮挡关系，如果射线可以碰撞到光源，那么就直接返回光源颜色，否则返回黑色。
+            这只是一种粗暴的方法，完全没有考虑多光源，光源规则与否，光源是否均匀的情况。更好的方法是采用蒙特卡罗方法采样
+        */
+        sycl::float3 L_dir{0,0,0};
+
+        /*
+            计算间接光照：
+            
+        */ 
+        sycl::float3 L_indir{0,0,0};
+
+    }
+    return finally;
 }
 void render(std::vector<BVHNode> &bvhtree, int spp=1){
     sycl::queue queue = init_queue();

@@ -63,74 +63,16 @@ CMAKE_BINARY_DIR = /home/admin/文档/OpenGL/RayTracing/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
-all: 3rdpart/all
+all:
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: 3rdpart/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
-clean: 3rdpart/clean
+clean:
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory 3rdpart
-
-# Recursive "all" directory target.
-3rdpart/all: 3rdpart/glm/all
-.PHONY : 3rdpart/all
-
-# Recursive "preinstall" directory target.
-3rdpart/preinstall: 3rdpart/glm/preinstall
-.PHONY : 3rdpart/preinstall
-
-# Recursive "clean" directory target.
-3rdpart/clean: 3rdpart/glm/clean
-.PHONY : 3rdpart/clean
-
-#=============================================================================
-# Directory level rules for directory 3rdpart/glm
-
-# Recursive "all" directory target.
-3rdpart/glm/all:
-.PHONY : 3rdpart/glm/all
-
-# Recursive "preinstall" directory target.
-3rdpart/glm/preinstall:
-.PHONY : 3rdpart/glm/preinstall
-
-# Recursive "clean" directory target.
-3rdpart/glm/clean:
-.PHONY : 3rdpart/glm/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/admin/文档/OpenGL/RayTracing/build/CMakeFiles --progress-num=1,2,3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -139,7 +81,6 @@ CMakeFiles/main.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/admin/文档/OpenGL/RayTracing/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

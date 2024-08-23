@@ -29,11 +29,6 @@ int main(int argc, char const *argv[]){
     ut::println("三角形数量",triangles.size());
     //创建线性bvh树
     auto bvhtree = BVHCreate(triangles); 
-    int i =0;
-    for(auto const & node:bvhtree){
-        ut::println("idx:",i++,node.is_leaf);
-        ut::println(node.left_index,node.right_index);
-    }
     ut::println("bvh长度",bvhtree.size());
     // 渲染
     render(bvhtree,10);
